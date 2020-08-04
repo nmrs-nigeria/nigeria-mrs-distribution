@@ -32,7 +32,11 @@
 		</dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
-			<artifactId>nigeriaemr</artifactId>
+			<artifactId>nigeriaemr-omod</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>nigeriaemr-api</artifactId>
 		</dependency>
 <!--		<dependency>-->
 <!--			<groupId>org.openmrs.module</groupId>-->
