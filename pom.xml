@@ -207,6 +207,7 @@
 				<scope>provided</scope>
 			</dependency>
 
+			<!-- Add NMRS module as a dependency since it is not yet a distributed module -->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>nigeriaemr-omod</artifactId>
@@ -215,10 +216,31 @@
 			</dependency>
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
-				<artifactId>nigeriaemr-api</artifactId>
-				<version>${nigeriaemrVersion}</version>
+				<artifactId>dataquality-omod</artifactId>
+				<version>${dataqualityVersion}</version>
 				<scope>provided</scope>
 			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>datamigration-omod</artifactId>
+				<version>${datamigrationVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>nmrsclinicals-omod</artifactId>
+				<version>${nmrsclinicalsVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.openmrs.module</groupId>
+				<artifactId>visualization-omod</artifactId>
+				<version>${visualizationVersion}</version>
+				<scope>provided</scope>
+			</dependency>
+
+
+
 		</dependencies>
 	</dependencyManagement>
 	<distributionManagement>
@@ -324,5 +346,9 @@
 		<!-- core configuration library -->
 		<!-- Add NMRS module as a dependency since it is not yet a distributed module -->
         <nigeriaemrVersion>1.4.2</nigeriaemrVersion>
+		<dataqualityVersion>1.0.1</dataqualityVersion>
+		<datamigrationVersion>1.0.1</datamigrationVersion>
+		<nmrsclinicalsVersion>1.0.1</nmrsclinicalsVersion>
+		<visualizationVersion>1.0.1</visualizationVersion>
 	</properties>
 </project>

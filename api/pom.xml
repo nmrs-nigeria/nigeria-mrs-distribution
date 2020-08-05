@@ -3,14 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>nigeriamrs.poc</artifactId>
+		<artifactId>nigeriamrs</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>nigeriamrs.poc-api</artifactId>
+	<artifactId>nigeriamrs-api</artifactId>
 	<packaging>jar</packaging>
-	<name>NigeriaMRS.PoC API</name>
-	<description>API project for NigeriaMRS.PoC</description>
+	<name>NigeriaMRS API</name>
+	<description>API project for NigeriaMRS</description>
 
 	<dependencies>
 		<dependency>
