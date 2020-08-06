@@ -4,20 +4,20 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.openmrs.module</groupId>
-		<artifactId>nigeriamrs.poc</artifactId>
+		<artifactId>nigeriamrs</artifactId>
 		<version>1.0.0-SNAPSHOT</version>
 	</parent>
 
-	<artifactId>nigeriamrs.poc-omod</artifactId>
+	<artifactId>nigeriamrs-omod</artifactId>
 	<packaging>jar</packaging>
-	<name>NigeriaMRS.PoC OMOD</name>
-	<description>Omod submodule for NigeriaMRS.PoC</description>
+	<name>NigeriaMRS OMOD</name>
+	<description>Omod submodule for NigeriaMRS</description>
 
 	<dependencies>
         <dependency>
             <groupId>org.openmrs.module</groupId>
-            <artifactId>nigeriamrs.poc-api</artifactId>
-            <version>1.0.0-SNAPSHOT</version>
+            <artifactId>nigeriamrs-api</artifactId>
+            <version>${project.parent.version}</version>
         </dependency>
 		<dependency>
 			<groupId>org.openmrs.web</groupId>
@@ -32,15 +32,24 @@
 		</dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
-			<artifactId>nigeriaemr</artifactId>
+			<artifactId>nigeriaemr-omod</artifactId>
 		</dependency>
-<!--		<dependency>-->
-<!--			<groupId>org.openmrs.module</groupId>-->
-<!--			<artifactId>nigeriaemr</artifactId>-->
-<!--			<version>1.0.0-SNAPSHOT</version>-->
-<!--			<type>jar</type>-->
-<!--			<scope>provided</scope>-->
-<!--		</dependency>-->
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>dataquality-omod</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>datamigration-omod</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>nmrsclinicals-omod</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.openmrs.module</groupId>
+			<artifactId>visualization-omod</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>appframework-api</artifactId>
