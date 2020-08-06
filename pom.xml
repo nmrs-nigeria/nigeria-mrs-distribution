@@ -234,7 +234,7 @@
 			</dependency>
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
-				<artifactId>visualization-omod</artifactId>
+				<artifactId>visualization-omo</artifactId>
 				<version>${visualizationVersion}</version>
 				<scope>provided</scope>
 			</dependency>
