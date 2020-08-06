@@ -47,6 +47,18 @@
         <require_module>
             org.openmrs.module.nigeriaemr
         </require_module>
+		<require_module>
+			org.openmrs.module.dataquality
+		</require_module>
+		<require_module>
+			org.openmrs.module.datamigration
+		</require_module>
+		<require_module>
+			org.openmrs.module.nmrsclinicals
+		</require_module>
+		<require_module>
+			org.openmrs.module.visualization
+		</require_module>
 	</require_modules>
 	
 	<!-- Extensions -->
