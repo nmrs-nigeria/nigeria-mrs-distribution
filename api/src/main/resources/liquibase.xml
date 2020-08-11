@@ -15,15 +15,15 @@
  
  	<!-- Uncomment the changeset below if you want to make the Item class persistable, see also Item and NigeriaMRSPoCDaoTest -->
  	<!--
-	<changeSet id="nigeriamrs.poc-2016-08-02-12-21" author="raff">
+	<changeSet id="nigeriamrs-2016-08-02-12-21" author="raff">
 		<preConditions onFail="MARK_RAN">
-			<not><tableExists tableName="nigeriamrs.poc_item"/></not>
+			<not><tableExists tableName="nigeriamrs_item"/></not>
 		</preConditions>
 		<comment>
-			Creating the nigeriamrs.poc_item table
+			Creating the nigeriamrs_item table
 		</comment>
-		<createTable tableName="nigeriamrs.poc_item">
-			<column name="nigeriamrs.poc_item_id" type="int" autoIncrement="true">
+		<createTable tableName="nigeriamrs_item">
+			<column name="nigeriamrs_item_id" type="int" autoIncrement="true">
 				<constraints primaryKey="true" nullable="false"/>
 			</column>
 			<column name="uuid" type="char(38)">
@@ -32,7 +32,7 @@
 			<column name="owner" type="int" />
 			<column name="description" type="varchar(255)" />
 		</createTable>
-        <addForeignKeyConstraint constraintName="nigeriamrs.poc_item_owner_fk" baseTableName="nigeriamrs.poc_item" baseColumnNames="owner"  referencedTableName="users"
+        <addForeignKeyConstraint constraintName="nigeriamrs_item_owner_fk" baseTableName="nigeriamrs_item" baseColumnNames="owner"  referencedTableName="users"
                                  referencedColumnNames="user_id" />
     </changeSet> -->
  

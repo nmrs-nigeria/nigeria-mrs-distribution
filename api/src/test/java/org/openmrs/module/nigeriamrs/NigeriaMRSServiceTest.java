@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.nigeriamrs.poc.api;
+package org.openmrs.module.nigeriamrs;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -16,24 +16,24 @@ import org.mockito.Mock;
 import org.mockito.MockitoAnnotations;
 import org.openmrs.User;
 import org.openmrs.api.UserService;
-import org.openmrs.module.nigeriamrs.poc.Item;
-import org.openmrs.module.nigeriamrs.poc.api.dao.NigeriaMRSPoCDao;
-import org.openmrs.module.nigeriamrs.poc.api.impl.NigeriaMRSPoCServiceImpl;
+import org.openmrs.module.nigeriamrs.api.dao.NigeriaMRSDao;
+import org.openmrs.module.nigeriamrs.api.impl.NigeriaMRSServiceImpl;
+
 import static org.mockito.Mockito.*;
 import static org.hamcrest.Matchers.*;
 import static org.junit.Assert.*;
 
 /**
- * This is a unit test, which verifies logic in NigeriaMRSPoCService. It doesn't extend
+ * This is a unit test, which verifies logic in NigeriaMRSService. It doesn't extend
  * BaseModuleContextSensitiveTest, thus it is run without the in-memory DB and Spring context.
  */
-public class NigeriaMRSPoCServiceTest {
+public class NigeriaMRSServiceTest {
 	
 	@InjectMocks
-	NigeriaMRSPoCServiceImpl basicModuleService;
+	NigeriaMRSServiceImpl basicModuleService;
 	
 	@Mock
-	NigeriaMRSPoCDao dao;
+	NigeriaMRSDao dao;
 	
 	@Mock
 	UserService userService;

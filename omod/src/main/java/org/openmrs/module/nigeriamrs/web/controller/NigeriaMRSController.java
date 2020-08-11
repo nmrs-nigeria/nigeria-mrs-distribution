@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.nigeriamrs.poc.web.controller;
+package org.openmrs.module.nigeriamrs.web.controller;
 
 import java.util.List;
 
@@ -26,11 +26,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 /**
  * This class configured as controller using annotation and mapped with the URL of
- * 'module/nigeriamrs.poc/nigeriamrs.pocLink.form'.
+ * 'module/nigeriamrs/nigeriamrsLink.form'.
  */
-@Controller("${rootrootArtifactId}.NigeriaMRSPoCController")
-@RequestMapping(value = "module/nigeriamrs.poc/nigeriamrs.poc.form")
-public class NigeriaMRSPoCController {
+@Controller("${rootrootArtifactId}.NigeriaMRSController")
+@RequestMapping(value = "module/nigeriamrs/nigeriamrs.form")
+public class NigeriaMRSController {
 	
 	/** Logger for this class and subclasses */
 	protected final Log log = LogFactory.getLog(getClass());
@@ -39,7 +39,7 @@ public class NigeriaMRSPoCController {
 	UserService userService;
 	
 	/** Success form view name */
-	private final String VIEW = "/module/nigeriamrs.poc/nigeriamrs.poc";
+	private final String VIEW = "/module/nigeriamrs/nigeriamrs";
 	
 	/**
 	 * Initially called after the getUsers method to get the landing form name

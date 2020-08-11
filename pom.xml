@@ -238,9 +238,6 @@
 				<version>${visualizationVersion}</version>
 				<scope>provided</scope>
 			</dependency>
-
-
-
 		</dependencies>
 	</dependencyManagement>
 	<distributionManagement>

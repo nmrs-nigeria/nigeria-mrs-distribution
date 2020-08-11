@@ -7,17 +7,15 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.nigeriamrs.poc.api.dao;
+package org.openmrs.module.nigeriamrs.api.dao;
 
 import org.hibernate.criterion.Restrictions;
 import org.openmrs.api.db.hibernate.DbSession;
 import org.openmrs.api.db.hibernate.DbSessionFactory;
-import org.openmrs.module.nigeriamrs.poc.Item;
+import org.openmrs.module.nigeriamrs.Item;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Repository;
 
-@Repository("nigeriamrs.poc.NigeriaMRSPoCDao")
-public class NigeriaMRSPoCDao {
+public class NigeriaMRSDao {
 	
 	@Autowired
 	DbSessionFactory sessionFactory;
@@ -33,5 +31,12 @@ public class NigeriaMRSPoCDao {
 	public Item saveItem(Item item) {
 		getSession().saveOrUpdate(item);
 		return item;
+	}
+	
+	/**
+	 * @param sessionFactory the sessionFactory to set
+	 */
+	public void setSessionFactory(DbSessionFactory sessionFactory) {
+		this.sessionFactory = sessionFactory;
 	}
 }

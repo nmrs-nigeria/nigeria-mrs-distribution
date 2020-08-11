@@ -7,20 +7,20 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.nigeriamrs.poc.api;
+package org.openmrs.module.nigeriamrs.api;
 
 import org.openmrs.annotation.Authorized;
 import org.openmrs.api.APIException;
 import org.openmrs.api.OpenmrsService;
-import org.openmrs.module.nigeriamrs.poc.NigeriaMRSPoCConfig;
-import org.openmrs.module.nigeriamrs.poc.Item;
+import org.openmrs.module.nigeriamrs.NigeriaMRSConfig;
+import org.openmrs.module.nigeriamrs.Item;
 import org.springframework.transaction.annotation.Transactional;
 
 /**
  * The main service of this module, which is exposed for other modules. See
  * moduleApplicationContext.xml on how it is wired up.
  */
-public interface NigeriaMRSPoCService extends OpenmrsService {
+public interface NigeriaMRService extends OpenmrsService {
 	
 	/**
 	 * Returns an item by uuid. It can be called by any authenticated user. It is fetched in read
@@ -42,7 +42,7 @@ public interface NigeriaMRSPoCService extends OpenmrsService {
 	 * @return
 	 * @throws APIException
 	 */
-	@Authorized(NigeriaMRSPoCConfig.MODULE_PRIVILEGE)
+	@Authorized(NigeriaMRSConfig.MODULE_PRIVILEGE)
 	@Transactional
 	Item saveItem(Item item) throws APIException;
 }

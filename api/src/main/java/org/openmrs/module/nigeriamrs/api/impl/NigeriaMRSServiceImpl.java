@@ -7,25 +7,25 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.nigeriamrs.poc.api.impl;
+package org.openmrs.module.nigeriamrs.api.impl;
 
 import org.openmrs.api.APIException;
 import org.openmrs.api.UserService;
 import org.openmrs.api.impl.BaseOpenmrsService;
-import org.openmrs.module.nigeriamrs.poc.Item;
-import org.openmrs.module.nigeriamrs.poc.api.NigeriaMRSPoCService;
-import org.openmrs.module.nigeriamrs.poc.api.dao.NigeriaMRSPoCDao;
+import org.openmrs.module.nigeriamrs.Item;
+import org.openmrs.module.nigeriamrs.api.NigeriaMRService;
+import org.openmrs.module.nigeriamrs.api.dao.NigeriaMRSDao;
 
-public class NigeriaMRSPoCServiceImpl extends BaseOpenmrsService implements NigeriaMRSPoCService {
+public class NigeriaMRSServiceImpl extends BaseOpenmrsService implements NigeriaMRService {
 	
-	NigeriaMRSPoCDao dao;
+	NigeriaMRSDao dao;
 	
 	UserService userService;
 	
 	/**
 	 * Injected in moduleApplicationContext.xml
 	 */
-	public void setDao(NigeriaMRSPoCDao dao) {
+	public void setDao(NigeriaMRSDao dao) {
 		this.dao = dao;
 	}
 	

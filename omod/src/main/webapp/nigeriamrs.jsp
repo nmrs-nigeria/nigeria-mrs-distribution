@@ -2,7 +2,7 @@
 
 <%@ include file="/WEB-INF/template/header.jsp"%>
 
-<h2><spring:message code="nigeriamrs.poc-omod.title" /></h2>
+<h2><spring:message code="nigeriamrs-omod.title" /></h2>
 
 <br/>
 <table>

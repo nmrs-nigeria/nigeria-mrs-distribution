@@ -7,7 +7,7 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.nigeriamrs.poc;
+package org.openmrs.module.nigeriamrs;
 
 import org.openmrs.BaseOpenmrsData;
 import org.openmrs.User;
@@ -24,14 +24,14 @@ import javax.persistence.Table;
 /**
  * Please note that a corresponding table schema must be created in liquibase.xml.
  */
-//Uncomment 2 lines below if you want to make the Item class persistable, see also NigeriaMRSPoCDaoTest and liquibase.xml
-//@Entity(name = "nigeriamrs.poc.Item")
-//@Table(name = "nigeriamrs.poc_item")
+//Uncomment 2 lines below if you want to make the Item class persistable, see also NigeriaMRSDaoTest and liquibase.xml
+//@Entity(name = "nigeriamrs.Item")
+//@Table(name = "nigeriamrs_item")
 public class Item extends BaseOpenmrsData {
 	
 	@Id
 	@GeneratedValue
-	@Column(name = "nigeriamrs.poc_item_id")
+	@Column(name = "nigeriamrs_item_id")
 	private Integer id;
 	
 	@ManyToOne

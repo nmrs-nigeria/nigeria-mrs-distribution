@@ -12,4 +12,4 @@ Hello, world.
     You are not logged in.
 <% } %>
 
-${ ui.includeFragment("nigeriamrs.poc", "users") }
+${ ui.includeFragment("nigeriamrs", "users") }

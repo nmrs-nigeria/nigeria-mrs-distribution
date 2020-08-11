@@ -1,4 +1,4 @@
-package org.openmrs.module.nigeriamrs.poc.page.controller;
+package org.openmrs.module.nigeriamrs.page.controller;
 
 import org.apache.commons.lang.StringUtils;
 import org.apache.commons.logging.Log;

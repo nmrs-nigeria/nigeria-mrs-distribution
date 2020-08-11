@@ -292,7 +292,7 @@
                             <div class="container">
                                 <div class="row" style="margin-top: 50px">
                                     <div class="col-12">
-                                        <img width="100%" src="${ui.resourceLink("nigeriamrs.poc", "images/logo.png")}"/>
+                                        <img width="100%" src="${ui.resourceLink("nigeriamrs", "images/logo.png")}"/>
                                     </div>
 
                                     <div class="col-12" style="text-align: center">

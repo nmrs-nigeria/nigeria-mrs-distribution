@@ -12,7 +12,7 @@
  * Copyright (C) OpenMRS, LLC.  All Rights Reserved.
  */
 
-package org.openmrs.module.nigeriamrs.poc.fragment.controller;
+package org.openmrs.module.nigeriamrs.fragment.controller;
 
 import org.openmrs.api.context.Context;
 import org.openmrs.module.appframework.domain.Extension;

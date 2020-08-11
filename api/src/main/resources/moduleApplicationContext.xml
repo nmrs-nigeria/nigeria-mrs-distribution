@@ -4,37 +4,26 @@
 
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xmlns:p="http://www.springframework.org/schema/p"
-       xmlns:context="http://www.springframework.org/schema/context"
-       xmlns:jee="http://www.springframework.org/schema/jee"
-       xmlns:tx="http://www.springframework.org/schema/tx"
-       xmlns:aop="http://www.springframework.org/schema/aop"
-       xmlns:util="http://www.springframework.org/schema/util"
        xsi:schemaLocation="http://www.springframework.org/schema/beans
-  		    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-  		    http://www.springframework.org/schema/context
-  		    http://www.springframework.org/schema/context/spring-context-3.0.xsd
-  		    http://www.springframework.org/schema/jee
-  		    http://www.springframework.org/schema/jee/spring-jee-3.0.xsd
-  		    http://www.springframework.org/schema/tx
-  		    http://www.springframework.org/schema/tx/spring-tx-3.0.xsd
-  		    http://www.springframework.org/schema/aop
-  		    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
-  		    http://www.springframework.org/schema/util
-  		    http://www.springframework.org/schema/util/spring-util-3.0.xsd">
+  		    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
 
-    <context:component-scan base-package="org.openmrs.module.nigeriamrs.poc" />
+    <bean id="nigeriamrs.NigeriaMRSConfig" class="org.openmrs.module.nigeriamrs.NigeriaMRSConfig"/>
 
-    <!-- Wraps NigeriaMRSPoCService methods in DB transactions and OpenMRS interceptors,
+    <bean id="nigeriamrs.NigeriaMRSDao" class="org.openmrs.module.nigeriamrs.api.dao.NigeriaMRSDao">
+        <property name="sessionFactory">
+            <ref bean="dbSessionFactory" />
+        </property>
+    </bean>
+    <!-- Wraps NigeriaMRSService methods in DB transactions and OpenMRS interceptors,
     which set audit info like dateCreated, changedBy, etc.-->
-    <bean id="nigeriamrs.poc.NigeriaMRSPoCService"
+    <bean id="nigeriamrs.NigeriaMRSService"
             class="org.springframework.transaction.interceptor.TransactionProxyFactoryBean">
         <property name="transactionManager">
             <ref bean="transactionManager" />
         </property>
         <property name="target">
-            <bean class="org.openmrs.module.nigeriamrs.poc.api.impl.NigeriaMRSPoCServiceImpl">
-                <property name="dao" ref="nigeriamrs.poc.NigeriaMRSPoCDao" />
+            <bean class="org.openmrs.module.nigeriamrs.api.impl.NigeriaMRSServiceImpl">
+                <property name="dao" ref="nigeriamrs.NigeriaMRSDao" />
             </bean>
         </property>
         <property name="preInterceptors">
@@ -45,13 +34,13 @@
         </property>
     </bean>
 
-    <!-- Adds NigeriaMRSPoCService to OpenMRS context so it can be accessed
-    calling Context.getService(NigeriaMRSPoCService.class) -->
+    <!-- Adds NigeriaMRSService to OpenMRS context so it can be accessed
+    calling Context.getService(NigeriaMRSService.class) -->
     <bean parent="serviceContext">
         <property name="moduleService">
             <list>
-                <value>org.openmrs.module.nigeriamrs.poc.api.NigeriaMRSPoCService</value>
-                <ref bean="nigeriamrs.poc.NigeriaMRSPoCService" />
+                <value>org.openmrs.module.nigeriamrs.api.NigeriaMRService</value>
+                <ref bean="nigeriamrs.NigeriaMRSService" />
             </list>
         </property>
     </bean>

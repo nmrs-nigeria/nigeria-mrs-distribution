@@ -1,4 +1,4 @@
-package org.openmrs.module.nigeriamrs.poc.page;
+package org.openmrs.module.nigeriamrs.page;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -28,7 +28,7 @@ public class NigeriaEMRLoginPageRequestMapper implements PageRequestMapper {
 		if (request.getProviderName().equals("referenceapplication")) {
 			if (request.getPageName().equals("login")) {
 				// change to the custom login provided by the module
-				request.setProviderNameOverride("nigeriamrs.poc");
+				request.setProviderNameOverride("nigeriamrs");
 				request.setPageNameOverride("nigeriaEMRLogin");
 				
 				log.info(request.toString());

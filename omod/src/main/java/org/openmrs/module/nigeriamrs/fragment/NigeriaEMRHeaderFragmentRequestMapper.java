@@ -1,4 +1,4 @@
-package org.openmrs.module.nigeriamrs.poc.fragment;
+package org.openmrs.module.nigeriamrs.fragment;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -28,7 +28,7 @@ public class NigeriaEMRHeaderFragmentRequestMapper implements FragmentRequestMap
 		if (request.getProviderName().equals("appui")) {
 			if (request.getFragmentId().equals("header")) {
 				// change to the custom login provided by the module
-				request.setProviderNameOverride("nigeriamrs.poc");
+				request.setProviderNameOverride("nigeriamrs");
 				request.setFragmentIdOverride("nigeriaEMRHeader");
 				
 				log.info(request.toString());

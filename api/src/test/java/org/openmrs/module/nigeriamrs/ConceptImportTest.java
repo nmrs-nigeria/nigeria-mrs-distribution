@@ -1,4 +1,4 @@
-package org.openmrs.module.nigeriamrs.poc;
+package org.openmrs.module.nigeriamrs;
 
 import org.junit.Test;
 import org.openmrs.api.context.Context;

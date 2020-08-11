@@ -7,15 +7,19 @@
  * Copyright (C) OpenMRS Inc. OpenMRS is a registered trademark and the OpenMRS
  * graphic logo is a trademark of OpenMRS Inc.
  */
-package org.openmrs.module.nigeriamrs.poc;
+package org.openmrs.module.nigeriamrs.fragment.controller;
 
-import org.springframework.stereotype.Component;
+import org.openmrs.api.UserService;
+import org.openmrs.ui.framework.annotation.SpringBean;
+import org.openmrs.ui.framework.fragment.FragmentModel;
 
 /**
- * Contains module's config.
+ *  * Controller for a fragment that shows all users  
  */
-@Component("nigeriamrs.poc.NigeriaMRSPoCConfig")
-public class NigeriaMRSPoCConfig {
+public class UsersFragmentController {
 	
-	public final static String MODULE_PRIVILEGE = "NigeriaMRS.PoC Privilege";
+	public void controller(FragmentModel model, @SpringBean("userService") UserService service) {
+		model.addAttribute("users", service.getAllUsers());
+	}
+	
 }
