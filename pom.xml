@@ -306,7 +306,7 @@
 		<appointmentschedulinguiVersion>1.9.0</appointmentschedulinguiVersion>
 		<calculationVersion>1.2</calculationVersion>
 		<chartsearchVersion>2.1.0</chartsearchVersion>
-		<coreappsVersion>1.28.0</coreappsVersion>
+<!--		<coreappsVersion>1.28.0</coreappsVersion>-->
 		<databaseBackupVersion>1.3.0</databaseBackupVersion>
 		<dataexchangeVersion>1.3.4</dataexchangeVersion>
 		<emrapiVersion>1.28.0</emrapiVersion>
