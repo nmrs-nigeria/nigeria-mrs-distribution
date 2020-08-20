@@ -35,7 +35,7 @@ public class NigeriaMRSDaoTest extends BaseModuleContextSensitiveTest {
 	UserService userService;
 	
 	@Test
-	@Ignore("Unignore if you want to make the Item class persistable, see also Item and liquibase.xml")
+	@Ignore("Unignore if you want to make the Item class persistable, see also Item and liquibase-update-to-latest.xml")
 	public void saveItem_shouldSaveAllPropertiesInDb() {
 		//Given
 		Item item = new Item();

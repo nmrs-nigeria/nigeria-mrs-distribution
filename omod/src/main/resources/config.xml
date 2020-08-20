@@ -84,17 +84,66 @@
 	 /Required Privileges -->
 
 
-	<!-- Required Global Properties 
+	<!-- Required Global Properties -->
+
 	<globalProperty>
-		<property>@MODULE_ID@.someProperty</property>
-		<defaultValue></defaultValue>
+		<property>isNmrsDistribution</property>
+		<defaultValue>true</defaultValue>
+		<description>Tell its an NMRS Distribution</description>
+	</globalProperty>
+	<globalProperty>
+		<property>ndr_last_run_date</property>
+		<defaultValue>2020-01-01</defaultValue>
 		<description>
-			A description of the global property goes here.  The description
-			should explain enough for administrators to understand the purpose
-			and possible values for the global property.
+			NDR last run date
 		</description>
 	</globalProperty>
-	/Required Global Properties -->
+	<globalProperty>
+		<property>facility_datim_code</property>
+		<defaultValue/>
+		<description/>
+	</globalProperty>
+	<globalProperty>
+		<property>facility_local_id</property>
+		<defaultValue/>
+		<description>
+			local facility id implemented by partner
+		</description>
+	</globalProperty>
+	<globalProperty>
+		<property>Facility_Name</property>
+		<defaultValue/>
+		<description>
+			Facility name. This should correspond to the name on DATIM
+		</description>
+	</globalProperty>
+	<globalProperty>
+		<property>nigeria_qual_id</property>
+		<defaultValue/>
+		<description>Nigeria qual facility Id
+		</description>
+	</globalProperty>
+	<globalProperty>
+		<property>partner_full_name</property>
+		<defaultValue/>
+		<description>
+			Partners full name
+		</description>
+	</globalProperty>
+	<globalProperty>
+		<property>partner_short_name</property>
+		<defaultValue/>
+		<description>
+			Partners standard short name
+		</description>
+	</globalProperty>
+	<globalProperty>
+		<property>patient_id_limit</property>
+		<defaultValue/>
+		<description>
+			This property is used to control the number of patient to be export by the nmrs-ndr extraction tool
+		</description>
+	</globalProperty>
 	
 	<!--
 	<dwr>
