@@ -153,8 +153,9 @@
     }
 
     #fieldset {
-        margin-left: 200px;
-        margin-top: 100px;
+        /*margin-left: 200px;*/
+        /*margin-top: 100px;*/
+        margin-top: 10%;
     }
 
     #header {
@@ -296,7 +297,7 @@
                                     </div>
 
                                     <div class="col-12" style="text-align: center">
-                                       <h1 style="color: #008751">NigeriaEMR</h1>
+                                       <h1 style="color: #008751">NigeriaMRS</h1>
                                     </div>
                                 </div>
                             </div>

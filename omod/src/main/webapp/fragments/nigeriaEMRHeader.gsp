@@ -99,7 +99,7 @@
                     <div style="padding-bottom: 10px;font-weight: bold;font-family: Trebuchet MS;">
                         <span id="headertittle">NigeriaMRS</span>
                     </div>
-                    <span id="headersubtittle">Keeping Records for better health</span>
+                    <span id="headersubtittle">Keeping Records for Quality healthcare</span>
                 </div>
             </div>
         </div>
