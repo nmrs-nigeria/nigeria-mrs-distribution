@@ -247,13 +247,15 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	
 	<distributionManagement>
-		<repository>
-			<id>bintray-nmrs-maven</id>
-			<name>nmrs-maven</name>
-			<url>https://api.bintray.com/maven/nmrs/maven/openmrs-module-nigeriamrs/;publish=1</url>
-		</repository>
+        <repository>
+            <id>bintray-nmrs-nigeria-maven</id>
+            <name>nmrs-nigeria-maven</name>
+            <url>https://api.bintray.com/maven/nmrs-nigeria/maven/openmrs-module-nigeriaemr/;publish=1</url>
+            </repository>
 	</distributionManagement>
+	
 	<repositories>
 		<repository>
 			<id>openmrs-repo</id>
@@ -270,8 +272,8 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
-			<id>bintray-nmrs-maven</id>
-			<name>bintray</name>
+			 <id>bintray-nmrs-nigeria-maven</id>
+            <name>nmrs-nigeria-maven</name>
 			<url>https://nmrs.bintray.com/maven</url>
 		</repository>
 	</repositories>
@@ -288,8 +290,8 @@
 			<snapshots>
 				<enabled>false</enabled>
 			</snapshots>
-			<id>bintray-nmrs-maven</id>
-			<name>bintray-plugins</name>
+			 <id>bintray-nmrs-nigeria-maven</id>
+            <name>nmrs-nigeria-maven</name>
 			<url>https://nmrs.bintray.com/maven</url>
 		</pluginRepository>
 	</pluginRepositories>
@@ -330,7 +332,7 @@
 		<metadatasharingVersion>1.6.0</metadatasharingVersion>
 		<openwebappsVersion>1.10.0</openwebappsVersion>
 		<patientFlagsVersion>3.0.2</patientFlagsVersion>
-		<patientqueueingVersion>1.0.0</patientqueueingVersion>
+	<!-- <patientqueueingVersion>1.0.0</patientqueueingVersion> -->
 		<providermanagementVersion>2.11.0</providermanagementVersion>
 		<referenceapplicationVersion>2.10.0</referenceapplicationVersion>
 		<referencedemodataVersion>1.4.5</referencedemodataVersion>
