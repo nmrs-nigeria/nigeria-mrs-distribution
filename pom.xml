@@ -353,9 +353,9 @@
 		<!-- core configuration library -->
 		<!-- Add NMRS module as a dependency since it is not yet a distributed module -->
         <nigeriaemrVersion>1.4.2</nigeriaemrVersion>
-		<dataqualityVersion>1.0.1</dataqualityVersion>
-		<datamigrationVersion>1.0.1</datamigrationVersion>
-		<nmrsclinicalsVersion>1.0.1</nmrsclinicalsVersion>
-		<visualizationVersion>1.0.1</visualizationVersion>
+		<dataqualityVersion>1.0.2</dataqualityVersion>
+		<datamigrationVersion>1.0.2</datamigrationVersion>
+		<nmrsclinicalsVersion>1.0.2</nmrsclinicalsVersion>
+		<visualizationVersion>1.0.2</visualizationVersion>
 	</properties>
 </project>
