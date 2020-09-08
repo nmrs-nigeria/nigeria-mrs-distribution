@@ -267,13 +267,13 @@
 			<url>http://repo1.maven.org/maven2</url>
 		</repository>
 		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			 <id>bintray-nmrs-nigeria-maven</id>
-			<name>bintray</name>
-			<url>https://nmrs.bintray.com/maven</url>
-		</repository>
+            <snapshots>
+            	<enabled>false</enabled>
+            </snapshots>
+            <id>bintray-nmrs-nigeria-maven</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/nmrs-nigeria/maven</url>
+        </repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -285,13 +285,13 @@
 			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>bintray-nmrs-nigeria-maven</id>
-			<name>bintray-plugins</name>
-			<url>https://nmrs.bintray.com/maven</url>
-		</pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-nmrs-nigeria-maven</id>
+            <name>bintray-plugins</name>
+            <url>https://dl.bintray.com/nmrs-nigeria/maven</url>
+        </pluginRepository>
 	</pluginRepositories>
 
 	<properties>
