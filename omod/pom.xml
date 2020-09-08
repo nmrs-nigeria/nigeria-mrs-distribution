@@ -30,10 +30,10 @@
 			<scope>provided</scope>
 			<classifier>tests</classifier>
 		</dependency>
-		<dependency>
+		<!-- <dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>nigeriaemr-omod</artifactId>
-		</dependency>
+		</dependency> -->
 		<dependency>
 			<groupId>org.openmrs.module</groupId>
 			<artifactId>dataquality-omod</artifactId>
