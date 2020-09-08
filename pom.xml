@@ -215,12 +215,12 @@
 			</dependency>
 
 			<!-- Add NMRS module as a dependency since it is not yet a distributed module -->
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>nigeriaemr-omod</artifactId>
 				<version>${nigeriaemrVersion}</version>
 				<scope>provided</scope>
-			</dependency>
+			</dependency> -->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>dataquality-omod</artifactId>
@@ -249,8 +249,8 @@
 	</dependencyManagement>
 	<distributionManagement>
 		<repository>
-			<id>bintray-nmrs-maven</id>
-			<name>nmrs-maven</name>
+			 <id>bintray-nmrs-nigeria-maven</id>
+            <name>nmrs-nigeria-maven</name>
 			<url>https://api.bintray.com/maven/nmrs/maven/openmrs-module-nigeriamrs/;publish=1</url>
 		</repository>
 	</distributionManagement>
@@ -267,13 +267,13 @@
 			<url>http://repo1.maven.org/maven2</url>
 		</repository>
 		<repository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>bintray-nmrs-maven</id>
-			<name>bintray</name>
-			<url>https://nmrs.bintray.com/maven</url>
-		</repository>
+            <snapshots>
+            	<enabled>false</enabled>
+            </snapshots>
+            <id>bintray-nmrs-nigeria-maven</id>
+            <name>bintray</name>
+            <url>https://dl.bintray.com/nmrs-nigeria/maven</url>
+        </repository>
 	</repositories>
 	<pluginRepositories>
 		<pluginRepository>
@@ -285,13 +285,13 @@
 			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
-			<id>bintray-nmrs-maven</id>
-			<name>bintray-plugins</name>
-			<url>https://nmrs.bintray.com/maven</url>
-		</pluginRepository>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <id>bintray-nmrs-nigeria-maven</id>
+            <name>bintray-plugins</name>
+            <url>https://dl.bintray.com/nmrs-nigeria/maven</url>
+        </pluginRepository>
 	</pluginRepositories>
 
 	<properties>
@@ -350,10 +350,10 @@
 
 		<!-- core configuration library -->
 		<!-- Add NMRS module as a dependency since it is not yet a distributed module -->
-        <nigeriaemrVersion>1.4.2</nigeriaemrVersion>
-		<dataqualityVersion>1.0.1</dataqualityVersion>
-		<datamigrationVersion>1.0.1</datamigrationVersion>
-		<nmrsclinicalsVersion>1.0.1</nmrsclinicalsVersion>
-		<visualizationVersion>1.0.1</visualizationVersion>
+        <!-- <nigeriaemrVersion>1.6.0</nigeriaemrVersion> -->
+		<dataqualityVersion>1.0.2</dataqualityVersion>
+		<datamigrationVersion>1.0.2</datamigrationVersion>
+		<nmrsclinicalsVersion>1.0.2</nmrsclinicalsVersion>
+		<visualizationVersion>1.0.2</visualizationVersion>
 	</properties>
 </project>
