@@ -215,12 +215,12 @@
 			</dependency>
 
 			<!-- Add NMRS module as a dependency since it is not yet a distributed module -->
-			<dependency>
+			<!-- <dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>nigeriaemr-omod</artifactId>
 				<version>${nigeriaemrVersion}</version>
 				<scope>provided</scope>
-			</dependency>
+			</dependency> -->
 			<dependency>
 				<groupId>org.openmrs.module</groupId>
 				<artifactId>dataquality-omod</artifactId>
@@ -350,7 +350,7 @@
 
 		<!-- core configuration library -->
 		<!-- Add NMRS module as a dependency since it is not yet a distributed module -->
-        <nigeriaemrVersion>1.6.0</nigeriaemrVersion>
+        <!-- <nigeriaemrVersion>1.6.0</nigeriaemrVersion> -->
 		<dataqualityVersion>1.0.2</dataqualityVersion>
 		<datamigrationVersion>1.0.2</datamigrationVersion>
 		<nmrsclinicalsVersion>1.0.2</nmrsclinicalsVersion>
