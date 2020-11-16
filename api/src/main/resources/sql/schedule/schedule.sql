@@ -1,0 +1,3 @@
+REPLACE INTO `scheduler_task_config` (`task_config_id`,`name`,`description`,`schedulable_class`,`start_time`,`start_time_pattern`,`repeat_interval`,`start_on_startup`,`started`,`created_by`,`date_created`,`changed_by`,`date_changed`,`last_execution_time`,`uuid`)
+VALUES
+(2,'Auto Close Visits Task','Stops all active visits that match the visit type(s) specified by the value of the global property ''visits.autoCloseVisitType''','org.openmrs.scheduler.tasks.AutoCloseVisitsTask','2011-11-28 23:59:59','MM/dd/yyyy HH:mm:ss','86400','0','1','1','2020-10-08 19:41:08','1','2020-10-09 14:06:35',NULL,'8c17b376-1a2b-11e1-a51a-00248140a5eb');
