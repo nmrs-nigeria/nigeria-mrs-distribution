@@ -1,3 +1,4 @@
+SET FOREIGN_KEY_CHECKS=0/0xd
 REPLACE INTO `concept_name` (`concept_id`,`name`,`locale`,`creator`,`date_created`,`concept_name_id`,`voided`,`voided_by`,`date_voided`,`void_reason`,`uuid`,`concept_name_type`,`locale_preferred`,`date_changed`,`changed_by`) VALUES
 (164834,'Operation room','en',1,'2017-02-24 19:22:30',141132,0,NULL,NULL,NULL,'141132BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',NULL,0,NULL,NULL),
 (164834,'Operating theater','en',1,'2017-02-24 19:22:30',141133,0,NULL,NULL,NULL,'141133BBBBBBBBBBBBBBBBBBBBBBBBBBBBBB',NULL,0,NULL,NULL),
@@ -1884,3 +1885,4 @@ REPLACE INTO `concept_name` (`concept_id`,`name`,`locale`,`creator`,`date_create
 (166249,'Aminu Kano Teaching Hopital PCR Lab','en',1,'2020-07-03 09:26:05',143017,0,NULL,NULL,NULL,'c0991ecd-9811-41ef-a4c9-032a9799e205','FULLY_SPECIFIED',1,NULL,NULL),
 (166250,'Plateau State Human Virology Research Center.','en',1,'2020-07-03 09:27:00',143018,0,NULL,NULL,NULL,'36cfb734-9415-45e7-9723-236e27d6c788','FULLY_SPECIFIED',1,NULL,NULL),
 (166251,'University College Hospital Ibadan','en',1,'2020-07-03 09:27:44',143019,0,NULL,NULL,NULL,'5bc41c5c-a0ac-40e5-9b32-95043a4c4914','FULLY_SPECIFIED',1,NULL,NULL)/0xd
+SET FOREIGN_KEY_CHECKS=1/0xd
