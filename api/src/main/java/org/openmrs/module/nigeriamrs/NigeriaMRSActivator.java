@@ -34,6 +34,12 @@ public class NigeriaMRSActivator extends BaseModuleActivator {
 	 */
 	public void started() {
 		log.info("Started NigeriaMRS");
+		try {
+			DatabaseUpdater.executeChangelog("liquibase-nmrs-update.xml", null);
+		}
+		catch (Exception e) {
+			log.error(e.getMessage());
+		}
 	}
 	
 	/**
