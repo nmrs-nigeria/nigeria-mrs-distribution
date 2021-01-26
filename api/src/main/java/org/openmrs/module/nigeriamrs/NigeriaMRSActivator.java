@@ -11,6 +11,7 @@ package org.openmrs.module.nigeriamrs;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.openmrs.Patient;
 import org.openmrs.api.context.Context;
 import org.openmrs.module.BaseModuleActivator;
 import org.openmrs.module.dataexchange.DataExporter;
@@ -20,6 +21,7 @@ import org.openmrs.util.DatabaseUpdater;
 import org.openmrs.util.InputRequiredException;
 
 import java.io.File;
+import java.util.List;
 import java.util.regex.Pattern;
 
 /**
@@ -34,7 +36,11 @@ public class NigeriaMRSActivator extends BaseModuleActivator {
 	 */
 	public void started() {
 		log.info("Started NigeriaMRS");
+		List<Patient> patientList = Context.getPatientService().getAllPatients();
 		try {
+			if (patientList != null && patientList.size() > 0) {
+				DatabaseUpdater.executeChangelog("liquibase-nmrs-existing-update.xml", null);
+			}
 			DatabaseUpdater.executeChangelog("liquibase-nmrs-update.xml", null);
 		}
 		catch (Exception e) {

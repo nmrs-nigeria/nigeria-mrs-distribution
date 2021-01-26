@@ -111,7 +111,7 @@
     </changeSet>
 
     <changeSet id="patient_identifier_type" author="wande" runOnChange="true">
-       
+
         <sqlFile path="sql/patient/patient_identifier_type.sql"
                  stripComments="true"
                  splitStatements="true"
@@ -124,6 +124,27 @@
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+    </changeSet>
+
+    <changeSet id="idgen_seq_id_gen" author="wande" runOnChange="true">
+        <sqlFile path="sql/idGen/idgen_seq_id_gen.sql"
+                 stripComments="true"
+                 splitStatements="true"
+                 endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="idgen_identifier_source" author="wande" runOnChange="true">
+        <sqlFile path="sql/idGen/idgen_identifier_source.sql"
+                 stripComments="true"
+                 splitStatements="true"
+                 endDelimiter=";"/>
+    </changeSet>
+
+    <changeSet id="idgen_auto_generation_option" author="wande" runOnChange="true">
+        <sqlFile path="sql/idGen/idgen_auto_generation_option.sql"
+                 stripComments="true"
+                 splitStatements="true"
+                 endDelimiter=";"/>
     </changeSet>
 
     <changeSet id="relationship_type" author="wande" runOnChange="true">
