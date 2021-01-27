@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog/1.9"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog/1.9
+                  http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-1.9.xsd">
+
+
+
+    <changeSet id="upgrade_exisiting" author="wande" runOnChange="true">
+       <sql>
+           ALTER TABLE concept_reference_source MODIFY date_created datetime NOT NULL;
+           ALTER TABLE concept_class MODIFY date_created datetime NOT NULL;
+           ALTER TABLE concept_name MODIFY date_created datetime NOT NULL;
+           ALTER TABLE concept_name_tag MODIFY date_created datetime NOT NULL;
+       </sql>
+    </changeSet>
+
+</databaseChangeLog>
