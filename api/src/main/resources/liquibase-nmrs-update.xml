@@ -201,609 +201,772 @@
 
     <!--concepts-->
     <changeSet id="concept_datatype" author="wande" runOnChange="true">
-       
+       <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
         <sqlFile path="sql/concepts/concept_datatype.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter=";"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_class" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_class.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter=";"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_1" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_1.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_2" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_2.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_3" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_3.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_4" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_4.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_5" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_5.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_6" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_6.sql"
                  stripComments="true"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name.sql"
                  stripComments="true"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_1" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_1.sql"
                  stripComments="true"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_2" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_2.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_3" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_3.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_4" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_4.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_5" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_5.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_6" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_6.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_name_7" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_7.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_name_8" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_8.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_name_9" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_9.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_name_10" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_10.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_name_11" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_11.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_12" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_12.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_13" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_13.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_14" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_14.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_15" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_15.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_name_16" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_16.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_17" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_17.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_18" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_18.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_19" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_19.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_name_20" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_name_20.sql"
                  stripComments="false"
                  splitStatements="true"
                  encoding="UTF-8"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_answer" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_answer.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_numeric" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_numeric.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_set" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_set.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_complex" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_complex.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_description" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_description.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_description_1" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_description_1.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_description_2" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_description_2.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_description_3" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_description_3.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_description_4" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_description_4.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_description_5" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_description_5.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_map_type" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_map_type.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_reference_source" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_source.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_1" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_1.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_2" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_2.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_3" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_3.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_4" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_4.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_5" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_5.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_6" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_6.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_7" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_7.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_8" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_8.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_9" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_9.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_10" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_10.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_11" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_11.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_12" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_12.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_13" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_13.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_14" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_14.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_15" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_15.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_16" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_16.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_17" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_17.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_18" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_18.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_term_19" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_term_19.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_reference_map" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_1" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_1.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_2" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_2.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_3" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_3.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_4" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_4.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_5" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_5.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_6" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_6.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_7" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_7.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_8" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_8.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_9" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_9.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_10" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_10.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_11" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_11.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_12" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_12.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_13" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_13.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_14" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_14.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_15" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_15.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_16" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_16.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_17" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_17.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
     <changeSet id="concept_reference_map_18" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_reference_map_18.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <changeSet id="concept_stop_word" author="wande" runOnChange="true">
+        <sql>SET FOREIGN_KEY_CHECKS=0;</sql>
        
         <sqlFile path="sql/concepts/concept_stop_word.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
+        <sql>SET FOREIGN_KEY_CHECKS=1;</sql>
     </changeSet>
 
     <!--programs-->
