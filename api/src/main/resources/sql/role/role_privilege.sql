@@ -71,7 +71,6 @@ REPLACE INTO `role_privilege` VALUES
   ('Application: Schedules And Overbooks Appointments','Task: appointmentschedulingui.overbookAppointments'),
   ('Application: Schedules Appointments','Task: appointmentschedulingui.bookAppointments'),
   ('Application: Schedules Appointments','Task: appointmentschedulingui.viewConfidential'),
-  ('Application: Sees Appointment Schedule','App: appointmentschedulingui.home'),
   ('Application: Sees Appointment Schedule','App: appointmentschedulingui.viewAppointments'),
   ('Application: Uses Capture Vitals App','App: referenceapplication.vitals'),
   ('Application: Uses Patient Summary','App: coreapps.findPatient'),
