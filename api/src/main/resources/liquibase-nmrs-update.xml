@@ -1061,5 +1061,11 @@
                  splitStatements="true"
                  endDelimiter="/0xd"/>
     </changeSet>
-
+ 	<changeSet id="appointment_schedule_type_update" author="toyeeb" runOnChange="true">
+       
+        <sqlFile path="pocsql/appointmentscheduling_appointment_type.sql"
+                 stripComments="false"
+                 splitStatements="true"
+                 endDelimiter="/0xd"/>
+    </changeSet>
 </databaseChangeLog>
