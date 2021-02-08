@@ -177,6 +177,14 @@
                  splitStatements="true"
                  endDelimiter="/0xd"/>
     </changeSet>
+
+    <changeSet id="patientflags_flag_update" author="wande" runOnChange="true">
+
+        <sqlFile path="sql/flags/patientflags_flag_update.sql"
+                 stripComments="false"
+                 splitStatements="true"
+                 endDelimiter="/0xd"/>
+    </changeSet>
     <changeSet id="patientflags_flag_tag" author="wande" runOnChange="true">
        
         <sqlFile path="sql/flags/patientflags_flag_tag.sql"
