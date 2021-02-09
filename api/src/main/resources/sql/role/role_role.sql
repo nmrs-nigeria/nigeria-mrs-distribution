@@ -61,7 +61,6 @@ REPLACE INTO `role_role` VALUES
   ('Privilege Level: Full','HTS'),
   ('Provider','HTS'),
   ('Application: Enters ADT Events','Lab'),
-  ('Privilege Level: Full','Lab'),
   ('Provider','Lab'),
   ('Privilege Level: Full','MandE'),
   ('MandE','Application: Schedules Appointments'),
