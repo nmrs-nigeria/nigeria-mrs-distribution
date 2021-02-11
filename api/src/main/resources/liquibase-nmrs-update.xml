@@ -1022,30 +1022,6 @@
                  splitStatements="true"
                  endDelimiter="/0xd"/>
     </changeSet>
-    
-     <changeSet id="poc_locations" author="toyeeb" runOnChange="true">
-       
-        <sqlFile path="pocsql/poc_locations.sql"
-                 stripComments="false"
-                 splitStatements="true"
-                 endDelimiter=";"/>
-    </changeSet>
-    
-    <changeSet id="location_tag" author="toyeeb" runOnChange="true">
-       
-        <sqlFile path="pocsql/location_tag.sql"
-                 stripComments="false"
-                 splitStatements="true"
-                 endDelimiter=";"/>
-    </changeSet>
-    
-     <changeSet id="location_tag_map" author="toyeeb" runOnChange="true">
-       
-        <sqlFile path="pocsql/location_tag_map.sql"
-                 stripComments="false"
-                 splitStatements="true"
-                 endDelimiter=";"/>
-    </changeSet>
 
     <changeSet id="global_property" author="wande" runOnChange="true">
        
@@ -1065,13 +1041,6 @@
     <changeSet id="serialize_object" author="toyeeb" runOnChange="true">
        
         <sqlFile path="sql/serializeobject/serializedobject.sql"
-                 stripComments="false"
-                 splitStatements="true"
-                 endDelimiter="/0xd"/>
-    </changeSet>
- 	<changeSet id="appointment_schedule_type_update" author="toyeeb" runOnChange="true">
-       
-        <sqlFile path="pocsql/appointmentscheduling_appointment_type.sql"
                  stripComments="false"
                  splitStatements="true"
                  endDelimiter="/0xd"/>
